@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="QCM interactif de chimie : transformations dans les deux sens et état d'équilibre.">
+<title>QCM Chimie | Prof Hamza Elissaoui</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="hero"><div class="eyebrow">2 BAC • PHYSIQUE-CHIMIE</div>
+<h1>Les transformations chimiques<br><span>et l'état d'équilibre</span></h1>
+<p>100 questions pour s'entraîner, comprendre et progresser.</p>
+<div class="teacher">Travail réalisé par <strong>Prof Hamza Elissaoui</strong></div></header>
+<main class="container">
+<section class="intro panel"><div><span class="tag">QCM interactif</span><h2>Évaluez vos connaissances</h2>
+<p>Choisissez une seule réponse par question. Vérifiez chaque réponse immédiatement ou terminez le test avant de consulter votre résultat.</p></div>
+<div class="stats"><div><strong>100</strong><small>Questions</small></div><div><strong>2</strong><small>Chapitres</small></div><div><strong>4</strong><small>Choix par question</small></div></div></section>
+<section class="toolbar panel"><label for="chapterFilter">Afficher :</label>
+<select id="chapterFilter"><option value="all">Les 100 questions</option><option value="1">Transformations dans les deux sens (1–50)</option><option value="2">État d'équilibre (51–100)</option></select>
+<label class="toggle"><input type="checkbox" id="instantMode" checked> Correction immédiate</label>
+<button id="resetBtn" class="btn btn-light">Recommencer</button></section>
+<section class="progress-wrap"><div class="progress-label"><span id="progressText">0 / 100 réponses</span><span id="percentText">0%</span></div><div class="progress"><div id="progressBar"></div></div></section>
+<div id="quiz"></div>
+<section class="finish panel"><div><h2>Votre résultat</h2><p id="resultText">Répondez aux questions puis cliquez sur « Terminer le QCM ».</p></div>
+<button id="finishBtn" class="btn btn-primary">Terminer le QCM</button></section>
+<div id="finalPanel" class="final-panel panel hidden" aria-live="polite"></div>
+<footer>© Prof Hamza Elissaoui • QCM pédagogique de Physique-Chimie • 2 BAC</footer></main>
+<script src="script.js"></script></body></html>
